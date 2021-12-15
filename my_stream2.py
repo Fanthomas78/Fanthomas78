@@ -81,7 +81,7 @@ else:
         line = st.line_chart(df.Close)
         rsi = st.area_chart(df.RSI)
         if data_load:
-            st.subheader('Détail')
+            st.subheader('Dataframe')
             data = st.dataframe(df)
             stock_select = st.sidebar.selectbox
     except Exception as e:
